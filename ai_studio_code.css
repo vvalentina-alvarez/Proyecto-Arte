@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    color: #222;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #c40000;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-style: italic;
+}
+
+/* ====== CONTADOR ====== */
+#contador {
+    font-size: 6em;
+    font-weight: bold;
+    color: red;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* ====== MENSAJES Y TEXTOS ====== */
+#texto {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mostrar {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ocultar {
+    display: none;
+}
+
+/* ====== ENCUESTA ====== */
+#encuesta {
+    margin-top: 200px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#encuesta label {
+    font-weight: bold;
+}
+
+#enviar {
+    background-color: #c40000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#enviar:hover {
+    background-color: #900000;
+}
+
+/* ====== BOTÓN LATERAL ====== */
+#botonLateral {
+    position: fixed;
+    top: 50%;
+    right: 5%;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* ====== BLOQUE NEGRO FINAL ====== */
+#bloque-negro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-image: url('roto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    text-align: center;
+}
+
+#contador-negro {
+    font-size: 8em;
+    font-weight: bold;
+}
+
+.mensaje {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}

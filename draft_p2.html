@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obsolescencia Digital</title>
+    <link rel="stylesheet" href="ai_studio_code.css">
+</head>
+<body>
+
+    <!-- === ENCABEZADO PRINCIPAL === -->
+    <header id="header">
+        <h1>Encuesta: ¡Gana 10 soles!</h1>
+    </header>
+
+    <!-- === CONTADOR PRINCIPAL === -->
+    <section id="contador-section">
+        <div id="contador">30</div>
+        <div id="texto">
+            <h2>OBSOLECERSE ES INEVITABLE</h2>
+        </div>
+    </section>
+
+    <!-- === ENCUESTA SIMULADA === -->
+    <section id="encuesta">
+        <form id="formulario">
+            <label>1. ¿Con qué frecuencia reemplazas tus dispositivos?</label><br>
+            <input type="radio" name="p1"> Cada año<br>
+            <input type="radio" name="p1"> Cada 2-3 años<br>
+            <input type="radio" name="p1"> Cuando dejan de funcionar<br><br>
+
+            <label>2. ¿Qué te frustra más de la tecnología actual?</label><br>
+            <input type="text" placeholder="Escribe tu respuesta..."><br><br>
+
+            <button type="button" id="enviar">Enviar respuestas</button>
+        </form>
+    </section>
+
+    <!-- === TEXTOS QUE CAMBIAN CON EL TIEMPO === -->
+    <section id="mensajes">
+        <div id="t1" class="mostrar">Gracias por participar...</div>
+        <div id="t2" class="ocultar">Algo empieza a fallar...</div>
+        <div id="t3" class="ocultar">Los botones ya no responden...</div>
+    </section>
+
+    <!-- === BOTÓN LATERAL INTERACTIVO === -->
+    <button id="botonLateral" onclick="cambiarContenido()">
+        Cambiar
+    </button>
+
+    <!-- === PANTALLA NEGRA FINAL (SIMULA FALLA TOTAL) === -->
+    <div id="bloque-negro">
+        <div class="mensaje">
+            Tiempo terminado. Esperando actualización...
+        </div>
+        <div id="contador-negro">5</div>
+    </div>
+
+    <!-- === AUDIO (SONIDO QUE SE DISTORSIONARÁ CON EL TIEMPO) === -->
+    <audio id="musicaFondo" src="audio/pista_base.mp3" autoplay loop></audio>
+
+    <script src="ai_studio_code.js"></script>
+</body>
+</html>
